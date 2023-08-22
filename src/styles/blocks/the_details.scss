@@ -16,19 +16,16 @@
   }
 
   &__photo {
-    overflow: hidden;
+    position: relative;
     width: 100%;
     height: 130px;
     object-fit: cover;
     object-position: center;
     display: block;
-    transition: transform $transitionTime ease;
 
-    &:hover {
-      transform: scale(105%);
-      transition: $transitionTime;
-    }
+    @include hover(transform, scale(1.02));
   }
+
 
   &__photo--1 {
     grid-column: 1 / 1;

@@ -1,6 +1,7 @@
 .page {
   font-family: "Roboto", "Arial", sans-serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
   margin: 0;
 
   &:has(:target) {

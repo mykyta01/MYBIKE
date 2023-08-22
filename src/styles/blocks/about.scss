@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 24px;
   color: $color-white;
 
@@ -10,10 +10,12 @@
 
   @include onTablet {
     padding-right: 32px;
+    padding-left: 32px;
   }
 
   @include onDesktop {
     padding-right: 32px;
+    padding-left: 32px;
   }
 
   @include onTablet {
@@ -26,8 +28,8 @@
     column-gap: 24px;
   }
 
-  &__item-1-4 {
-    grid-column: 1 / 2;
+  &__item--1-4 {
+    grid-column: 1 / 2 ;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.5px;
@@ -39,35 +41,11 @@
     }
 
     @include onDesktop {
-      grid-column: 1 / 5;
+      grid-column: 1 / 6;
     }
   }
 
-  &__item--title {
-    grid-column: 1 / 3 ;
-    margin: 0;
-    font-size: 32px;
-    font-weight: 500;
-    width: 100%;
-
-    @include onTablet {
-      grid-column: 1 / 3;
-      font-size: 48px;
-      line-height: 48px;
-    }
-
-    @include onDesktop {
-      grid-column: 1 / 4;
-      font-size: 64px;
-      line-height: 64px;
-    }
-  }
-
-  &__item--paragraf {
-    margin: 0;
-  }
-
-  &__item-4-6 {
+  &__item--4-6 {
     grid-column: 1 / 2;
     font-size: 23px;
     line-height: 32px;
@@ -79,7 +57,30 @@
     }
 
     @include onDesktop {
-      grid-column: 6 / 11;
+      grid-column: 6 / 12;
     }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    width: 100%;
+
+    @include onTablet {
+      grid-column: 2 / 3;
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 4;
+      font-size: 64px;
+      line-height: 64px;
+    }
+  }
+
+  &__paragraf {
+    margin: 0;
   }
 }

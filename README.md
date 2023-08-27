@@ -4,6 +4,6 @@ Welcome to MYBIKE - Your Ultimate Cycling Adventure Begins Here! Discover a worl
 
 Technologies and tools used: HTML5, JavaScript, CSS3, BEM, SCSS, Gulp, Stylelint.
 
-- [DEMO LINK](https://mykyta01.github.io/MYBIKE/)
+- [DEMO LINK](https://mykyta01.github.io/MyBIKE/)
 
 - [Figma design](https://www.figma.com/file/NZQAIydtHo5QkINyGLHNcq/BIKE-New-Version?node-id=0%3A1)
